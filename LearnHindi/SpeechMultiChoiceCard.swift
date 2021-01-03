@@ -4,20 +4,20 @@ import SwiftUI
 import AVFoundation
 
 struct SpeechMultiChoiceCard: View {
+  let data: SpeechMultiChoice
   let hindiSpeechSynthesizer = AVSpeechSynthesizer()
-  let hindiText: String
   @State private var result = ""
   
   var body: some View {
     VStack {
       Spacer()
       Text("Translate")
-        .font(.largeTitle)
+        .font(.title)
       HStack {
         Button(action: {
           speakHindiText()
         }) {
-          Text("khaana")
+          Text(data.text)
           Image(systemName: "speaker.wave.3")
         }
         .font(.largeTitle)
@@ -30,32 +30,24 @@ struct SpeechMultiChoiceCard: View {
       Text(result)
         .font(.largeTitle)
       Spacer()
-      Button(action: {
-        result = "Correct Answer ✅"
-      }) {
-        Text("Food")
+      ForEach(data.answerOptions, id: \.answer) { answerOption in
+        Button(action: {
+          result = answerOption.isCorrect ? "Correct Answer ✅" : "Try again ❌"
+        }) {
+          Text(answerOption.answer)
+        }
+          .font(.largeTitle)
+          .foregroundColor(.white)
+          .padding()
+          .background(Color.accentColor)
+          .cornerRadius(10)
       }
-      .font(.largeTitle)
-      .foregroundColor(.white)
-      .padding()
-      .background(Color.accentColor)
-      .cornerRadius(10)
-      Button(action: {
-        result = "Try again ❌"
-      }) {
-        Text("Drink")
-      }
-      .font(.largeTitle)
-      .foregroundColor(.white)
-      .padding()
-      .background(Color.accentColor)
-      .cornerRadius(10)
       Spacer()
     }
   }
   
   func speakHindiText() {
-    let utterance = AVSpeechUtterance(string: hindiText)
+    let utterance = AVSpeechUtterance(string: data.speech)
     utterance.voice = AVSpeechSynthesisVoice(language: "hi-IN")
     utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.9
     
@@ -66,7 +58,7 @@ struct SpeechMultiChoiceCard: View {
 struct HindiSpeechCard_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SpeechMultiChoiceCard(hindiText: "हिंदी सीखिए")
+      SpeechMultiChoiceCard(data: SpeechMultiChoice.data[0])
         .navigationTitle("Learn Hindi 🇮🇳")
     }
   }
