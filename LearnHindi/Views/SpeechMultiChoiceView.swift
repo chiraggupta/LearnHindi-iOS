@@ -4,9 +4,22 @@ import SwiftUI
 import AVFoundation
 
 struct SpeechMultiChoiceView: View {
-  let questions: SpeechMultiChoiceQuestion
+  let questions: [SpeechMultiChoiceQuestion]
+
+  @State private var currentQuestionIndex = 0
+  private var currentQuestion: SpeechMultiChoiceQuestion {
+      return questions[currentQuestionIndex]
+  }
+  
+  @State private var resultIsCorrect: Bool?
+  private var resultText: String {
+    guard let resultIsCorrect = resultIsCorrect else {
+      return " "
+    }
+    return resultIsCorrect ? "Correct Answer ✅" : "Try again ❌"
+  }
+
   let hindiSpeechSynthesizer = AVSpeechSynthesizer()
-  @State private var result = ""
   
   var body: some View {
     VStack {
@@ -17,7 +30,7 @@ struct SpeechMultiChoiceView: View {
         Button(action: {
           speakHindiText()
         }) {
-          Text(questions.text)
+          Text(currentQuestion.text)
           Image(systemName: "speaker.wave.3")
         }
         .font(.largeTitle)
@@ -26,13 +39,12 @@ struct SpeechMultiChoiceView: View {
         .background(Color.orange)
         .cornerRadius(10)
       }
+      
       Spacer()
-      Text(result)
-        .font(.largeTitle)
-      Spacer()
-      ForEach(questions.answerOptions, id: \.answer) { answerOption in
+      
+      ForEach(currentQuestion.answerOptions, id: \.answer) { answerOption in
         Button(action: {
-          result = answerOption.isCorrect ? "Correct Answer ✅" : "Try again ❌"
+          resultIsCorrect = answerOption.isCorrect
         }) {
           Text(answerOption.answer)
         }
@@ -42,12 +54,29 @@ struct SpeechMultiChoiceView: View {
           .background(Color.accentColor)
           .cornerRadius(10)
       }
+      
       Spacer()
+
+      Text(resultText)
+        .font(.largeTitle)
+
+      Spacer()
+
+      Button(action: {
+        if resultIsCorrect != nil && resultIsCorrect == true && currentQuestionIndex < questions.count - 1 {
+          currentQuestionIndex = currentQuestionIndex + 1
+          resultIsCorrect = nil
+        }
+      }) {
+        Text("Next")
+      }
+      .font(.title3)
+      .disabled(!(resultIsCorrect ?? false))
     }
   }
   
   func speakHindiText() {
-    let utterance = AVSpeechUtterance(string: questions.speech)
+    let utterance = AVSpeechUtterance(string: currentQuestion.speech)
     utterance.voice = AVSpeechSynthesisVoice(language: "hi-IN")
     utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.9
     
@@ -58,7 +87,7 @@ struct SpeechMultiChoiceView: View {
 struct HindiSpeechCard_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SpeechMultiChoiceView(questions: SpeechMultiChoiceQuestion.questions[0])
+      SpeechMultiChoiceView(questions: SpeechMultiChoiceQuestion.questions)
         .navigationTitle("Learn Hindi 🇮🇳")
     }
   }
