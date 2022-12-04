@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A2B6E7525A1BD23005C772D /* SpeechMultiChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B6E7425A1BD23005C772D /* SpeechMultiChoice.swift */; };
+		0A2B6E7525A1BD23005C772D /* SpeechMultiChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B6E7425A1BD23005C772D /* SpeechMultiChoiceQuestion.swift */; };
 		0A2B6E8F25A1C7F0005C772D /* AnswerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B6E8E25A1C7F0005C772D /* AnswerOption.swift */; };
-		0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceCard.swift */; };
+		0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */; };
 		0A7982BB25A0720B00B8E584 /* LearnHindiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7982BA25A0720B00B8E584 /* LearnHindiApp.swift */; };
 		0A7982BD25A0720B00B8E584 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7982BC25A0720B00B8E584 /* ContentView.swift */; };
 		0A7982BF25A0720C00B8E584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7982BE25A0720C00B8E584 /* Assets.xcassets */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A2B6E7425A1BD23005C772D /* SpeechMultiChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoice.swift; sourceTree = "<group>"; };
+		0A2B6E7425A1BD23005C772D /* SpeechMultiChoiceQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceQuestion.swift; sourceTree = "<group>"; };
 		0A2B6E8E25A1C7F0005C772D /* AnswerOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerOption.swift; sourceTree = "<group>"; };
-		0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceCard.swift; sourceTree = "<group>"; };
+		0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceView.swift; sourceTree = "<group>"; };
 		0A7982B725A0720B00B8E584 /* LearnHindi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnHindi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7982BA25A0720B00B8E584 /* LearnHindiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnHindiApp.swift; sourceTree = "<group>"; };
 		0A7982BC25A0720B00B8E584 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,10 +60,9 @@
 		0A7982B925A0720B00B8E584 /* LearnHindi */ = {
 			isa = PBXGroup;
 			children = (
-				0AB72D3325A1BB09002E99B8 /* Model */,
 				0A7982BA25A0720B00B8E584 /* LearnHindiApp.swift */,
-				0A7982BC25A0720B00B8E584 /* ContentView.swift */,
-				0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceCard.swift */,
+				0AB72D3325A1BB09002E99B8 /* Model */,
+				0ACDCACC293D42A700988B7A /* Views */,
 				0A7982BE25A0720C00B8E584 /* Assets.xcassets */,
 				0A7982C325A0720C00B8E584 /* Info.plist */,
 				0A7982C025A0720C00B8E584 /* Preview Content */,
@@ -82,10 +81,19 @@
 		0AB72D3325A1BB09002E99B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0A2B6E7425A1BD23005C772D /* SpeechMultiChoice.swift */,
+				0A2B6E7425A1BD23005C772D /* SpeechMultiChoiceQuestion.swift */,
 				0A2B6E8E25A1C7F0005C772D /* AnswerOption.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0ACDCACC293D42A700988B7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A7982BC25A0720B00B8E584 /* ContentView.swift */,
+				0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A7982BD25A0720B00B8E584 /* ContentView.swift in Sources */,
-				0A2B6E7525A1BD23005C772D /* SpeechMultiChoice.swift in Sources */,
-				0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceCard.swift in Sources */,
+				0A2B6E7525A1BD23005C772D /* SpeechMultiChoiceQuestion.swift in Sources */,
+				0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceView.swift in Sources */,
 				0A7982BB25A0720B00B8E584 /* LearnHindiApp.swift in Sources */,
 				0A2B6E8F25A1C7F0005C772D /* AnswerOption.swift in Sources */,
 			);

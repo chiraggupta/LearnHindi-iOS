@@ -1,15 +1,15 @@
 // ChiragGupta.com
 
-struct SpeechMultiChoice {
+struct SpeechMultiChoiceQuestion {
   let text: String
   let speech: String
   let answerOptions: [AnswerOption]
 }
 
-extension SpeechMultiChoice {
-  static var data: [SpeechMultiChoice] {
+extension SpeechMultiChoiceQuestion {
+  static var questions: [SpeechMultiChoiceQuestion] {
     [
-      SpeechMultiChoice(text: "khaana", speech: "खाना", answerOptions: [
+      SpeechMultiChoiceQuestion(text: "khaana", speech: "खाना", answerOptions: [
         AnswerOption(answer: "Food", isCorrect: true),
         AnswerOption(answer: "Drink", isCorrect: false)
       ])

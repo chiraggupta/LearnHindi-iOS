@@ -3,8 +3,8 @@
 import SwiftUI
 import AVFoundation
 
-struct SpeechMultiChoiceCard: View {
-  let data: SpeechMultiChoice
+struct SpeechMultiChoiceView: View {
+  let questions: SpeechMultiChoiceQuestion
   let hindiSpeechSynthesizer = AVSpeechSynthesizer()
   @State private var result = ""
   
@@ -17,7 +17,7 @@ struct SpeechMultiChoiceCard: View {
         Button(action: {
           speakHindiText()
         }) {
-          Text(data.text)
+          Text(questions.text)
           Image(systemName: "speaker.wave.3")
         }
         .font(.largeTitle)
@@ -30,7 +30,7 @@ struct SpeechMultiChoiceCard: View {
       Text(result)
         .font(.largeTitle)
       Spacer()
-      ForEach(data.answerOptions, id: \.answer) { answerOption in
+      ForEach(questions.answerOptions, id: \.answer) { answerOption in
         Button(action: {
           result = answerOption.isCorrect ? "Correct Answer ✅" : "Try again ❌"
         }) {
@@ -47,7 +47,7 @@ struct SpeechMultiChoiceCard: View {
   }
   
   func speakHindiText() {
-    let utterance = AVSpeechUtterance(string: data.speech)
+    let utterance = AVSpeechUtterance(string: questions.speech)
     utterance.voice = AVSpeechSynthesisVoice(language: "hi-IN")
     utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.9
     
@@ -58,7 +58,7 @@ struct SpeechMultiChoiceCard: View {
 struct HindiSpeechCard_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SpeechMultiChoiceCard(data: SpeechMultiChoice.data[0])
+      SpeechMultiChoiceView(questions: SpeechMultiChoiceQuestion.questions[0])
         .navigationTitle("Learn Hindi 🇮🇳")
     }
   }

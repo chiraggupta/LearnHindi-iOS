@@ -4,7 +4,7 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    SpeechMultiChoiceCard(data: SpeechMultiChoice.data[0])
+    SpeechMultiChoiceView(questions: SpeechMultiChoiceQuestion.questions[0])
       .navigationTitle("Learn Hindi 🇮🇳")
   }
 }
