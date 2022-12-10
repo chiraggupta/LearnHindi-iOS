@@ -1,6 +1,6 @@
 // ChiragGupta.com
 
-struct AnswerOption {
+struct AnswerChoice {
   let answer: String
   let isCorrect: Bool
 }

@@ -23,6 +23,7 @@ struct SpeechMultiChoiceView: View {
   
   var body: some View {
     VStack {
+      
       Spacer()
       Text("Translate")
         .font(.title)
@@ -41,8 +42,7 @@ struct SpeechMultiChoiceView: View {
       }
       
       Spacer()
-      
-      ForEach(currentQuestion.answerOptions, id: \.answer) { answerOption in
+      ForEach(currentQuestion.answerChoices, id: \.answer) { answerOption in
         Button(action: {
           resultIsCorrect = answerOption.isCorrect
         }) {
@@ -56,12 +56,10 @@ struct SpeechMultiChoiceView: View {
       }
       
       Spacer()
-
       Text(resultText)
         .font(.largeTitle)
 
       Spacer()
-
       Button(action: {
         if resultIsCorrect != nil && resultIsCorrect == true && currentQuestionIndex < questions.count - 1 {
           currentQuestionIndex = currentQuestionIndex + 1
