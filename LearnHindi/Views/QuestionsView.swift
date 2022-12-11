@@ -26,6 +26,7 @@ struct QuestionsView: View {
       Spacer()
       SpeechMultiChoiceView(question: currentQuestion, onNext: nextQuestion)
         .id(currentQuestionIndex)
+        .transition(.push(from: .trailing))
     }
   }
   
@@ -34,7 +35,9 @@ struct QuestionsView: View {
       return
     }
     
-    currentQuestionIndex += 1
+    withAnimation {
+      currentQuestionIndex += 1
+    }
   }
 }
 
