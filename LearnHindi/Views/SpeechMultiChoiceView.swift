@@ -4,12 +4,8 @@ import SwiftUI
 import AVFoundation
 
 struct SpeechMultiChoiceView: View {
-  let questions: [SpeechMultiChoiceQuestion]
-  
-  @State private var currentQuestionIndex = 0
-  private var currentQuestion: SpeechMultiChoiceQuestion {
-    return questions[currentQuestionIndex]
-  }
+  let question: SpeechMultiChoiceQuestion
+  let onNext: () -> Void
   
   @State private var resultIsCorrect: Bool?
   private var resultText: String {
@@ -18,8 +14,8 @@ struct SpeechMultiChoiceView: View {
     }
     return resultIsCorrect ? "Correct Answer ✅" : "Try again ❌"
   }
-
-  let hindiSpeechSynthesizer = AVSpeechSynthesizer()
+  
+  let speechController = SpeechController()
   
   var body: some View {
     VStack {
@@ -29,9 +25,9 @@ struct SpeechMultiChoiceView: View {
         .font(.title)
       HStack {
         Button(action: {
-          speakHindiText()
+          speechController.speakHindiText(text: question.speech)
         }) {
-          Text(currentQuestion.text)
+          Text(question.text)
           Image(systemName: "speaker.wave.3")
         }
         .font(.largeTitle)
@@ -42,7 +38,7 @@ struct SpeechMultiChoiceView: View {
       }
       
       Spacer()
-      ForEach(currentQuestion.answerChoices, id: \.answer) { answerOption in
+      ForEach(question.answerChoices, id: \.answer) { answerOption in
         Button(action: {
           resultIsCorrect = answerOption.isCorrect
         }) {
@@ -58,13 +54,11 @@ struct SpeechMultiChoiceView: View {
       Spacer()
       Text(resultText)
         .font(.largeTitle)
-        .animation(.default, value: resultText)
       
       Spacer()
       Button(action: {
-        if resultIsCorrect != nil && resultIsCorrect == true && currentQuestionIndex < questions.count - 1 {
-          currentQuestionIndex = currentQuestionIndex + 1
-          resultIsCorrect = nil
+        if resultIsCorrect != nil && resultIsCorrect == true {
+          onNext()
         }
       }) {
         Text("Next")
@@ -73,20 +67,12 @@ struct SpeechMultiChoiceView: View {
       .disabled(!(resultIsCorrect ?? false))
     }
   }
-  
-  func speakHindiText() {
-    let utterance = AVSpeechUtterance(string: currentQuestion.speech)
-    utterance.voice = AVSpeechSynthesisVoice(language: "hi-IN")
-    utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.9
-    
-    hindiSpeechSynthesizer.speak(utterance)
-  }
 }
 
 struct HindiSpeechCard_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SpeechMultiChoiceView(questions: SpeechMultiChoiceQuestion.questions)
+      SpeechMultiChoiceView(question: SpeechMultiChoiceQuestion.questions[0], onNext: {})
         .navigationTitle("Learn Hindi 🇮🇳")
     }
   }

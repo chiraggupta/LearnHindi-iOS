@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A2B6E7525A1BD23005C772D /* SpeechMultiChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B6E7425A1BD23005C772D /* SpeechMultiChoiceQuestion.swift */; };
 		0A2B6E8F25A1C7F0005C772D /* AnswerChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B6E8E25A1C7F0005C772D /* AnswerChoice.swift */; };
+		0A3A89152946024E003116B0 /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A89142946024E003116B0 /* SpeechController.swift */; };
 		0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */; };
 		0A7982BB25A0720B00B8E584 /* LearnHindiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7982BA25A0720B00B8E584 /* LearnHindiApp.swift */; };
-		0A7982BD25A0720B00B8E584 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7982BC25A0720B00B8E584 /* ContentView.swift */; };
+		0A7982BD25A0720B00B8E584 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7982BC25A0720B00B8E584 /* QuestionsView.swift */; };
 		0A7982BF25A0720C00B8E584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7982BE25A0720C00B8E584 /* Assets.xcassets */; };
 		0A7982C225A0720C00B8E584 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7982C125A0720C00B8E584 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -19,10 +20,11 @@
 /* Begin PBXFileReference section */
 		0A2B6E7425A1BD23005C772D /* SpeechMultiChoiceQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceQuestion.swift; sourceTree = "<group>"; };
 		0A2B6E8E25A1C7F0005C772D /* AnswerChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoice.swift; sourceTree = "<group>"; };
+		0A3A89142946024E003116B0 /* SpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
 		0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceView.swift; sourceTree = "<group>"; };
 		0A7982B725A0720B00B8E584 /* LearnHindi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnHindi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7982BA25A0720B00B8E584 /* LearnHindiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnHindiApp.swift; sourceTree = "<group>"; };
-		0A7982BC25A0720B00B8E584 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A7982BC25A0720B00B8E584 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		0A7982BE25A0720C00B8E584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A7982C125A0720C00B8E584 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A7982C325A0720C00B8E584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3A891329460215003116B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A3A89142946024E003116B0 /* SpeechController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0A7982AE25A0720B00B8E584 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 				0A7982BA25A0720B00B8E584 /* LearnHindiApp.swift */,
 				0AB72D3325A1BB09002E99B8 /* Model */,
 				0ACDCACC293D42A700988B7A /* Views */,
+				0A3A891329460215003116B0 /* Controllers */,
 				0A7982BE25A0720C00B8E584 /* Assets.xcassets */,
 				0A7982C325A0720C00B8E584 /* Info.plist */,
 				0A7982C025A0720C00B8E584 /* Preview Content */,
@@ -90,7 +101,7 @@
 		0ACDCACC293D42A700988B7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A7982BC25A0720B00B8E584 /* ContentView.swift */,
+				0A7982BC25A0720B00B8E584 /* QuestionsView.swift */,
 				0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */,
 			);
 			path = Views;
@@ -165,11 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7982BD25A0720B00B8E584 /* ContentView.swift in Sources */,
+				0A7982BD25A0720B00B8E584 /* QuestionsView.swift in Sources */,
 				0A2B6E7525A1BD23005C772D /* SpeechMultiChoiceQuestion.swift in Sources */,
 				0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceView.swift in Sources */,
 				0A7982BB25A0720B00B8E584 /* LearnHindiApp.swift in Sources */,
 				0A2B6E8F25A1C7F0005C772D /* AnswerChoice.swift in Sources */,
+				0A3A89152946024E003116B0 /* SpeechController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -302,7 +314,7 @@
 				DEVELOPMENT_TEAM = C3585HS6BZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LearnHindi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +336,7 @@
 				DEVELOPMENT_TEAM = C3585HS6BZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LearnHindi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

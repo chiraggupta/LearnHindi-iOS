@@ -11,7 +11,7 @@ extension SpeechMultiChoiceQuestion {
     [
       SpeechMultiChoiceQuestion(text: "khaana", speech: "खाना", answerChoices: [
         AnswerChoice(answer: "Food", isCorrect: true),
-      AnswerChoice(answer: "Drink", isCorrect: false)
+        AnswerChoice(answer: "Drink", isCorrect: false)
       ]),
       SpeechMultiChoiceQuestion(text: "chaaval", speech: "चावल", answerChoices: [
         AnswerChoice(answer: "Wheat", isCorrect: false),
