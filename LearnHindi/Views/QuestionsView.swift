@@ -5,15 +5,15 @@ import SwiftUI
 struct QuestionsView: View {
   let questions: [SpeechMultiChoiceQuestion]
   
-  @State private var currentQuestionIndex = 0
+  @State private var questionNumber = 1
   private var currentQuestion: SpeechMultiChoiceQuestion {
-    return questions[currentQuestionIndex]
+    return questions[questionNumber - 1]
   }
   private var progress: Double {
-    return Double(currentQuestionIndex) / Double(questions.count)
+    return Double(questionNumber) / Double(questions.count)
   }
   private var progressText: String {
-    "Question \(currentQuestionIndex + 1) of \(questions.count)"
+    "Question \(questionNumber) of \(questions.count)"
   }
   
   var body: some View {
@@ -25,18 +25,18 @@ struct QuestionsView: View {
       
       Spacer()
       SpeechMultiChoiceView(question: currentQuestion, onNext: nextQuestion)
-        .id(currentQuestionIndex)
+        .id(questionNumber)
         .transition(.push(from: .trailing))
     }
   }
   
   func nextQuestion() {
-    if currentQuestionIndex == questions.count - 1 {
+    if questionNumber == questions.count {
       return
     }
     
     withAnimation {
-      currentQuestionIndex += 1
+      questionNumber += 1
     }
   }
 }
