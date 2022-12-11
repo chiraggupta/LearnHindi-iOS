@@ -5,10 +5,10 @@ import AVFoundation
 
 struct SpeechMultiChoiceView: View {
   let questions: [SpeechMultiChoiceQuestion]
-
+  
   @State private var currentQuestionIndex = 0
   private var currentQuestion: SpeechMultiChoiceQuestion {
-      return questions[currentQuestionIndex]
+    return questions[currentQuestionIndex]
   }
   
   @State private var resultIsCorrect: Bool?
@@ -48,17 +48,18 @@ struct SpeechMultiChoiceView: View {
         }) {
           Text(answerOption.answer)
         }
-          .font(.largeTitle)
-          .foregroundColor(.white)
-          .padding()
-          .background(Color.accentColor)
-          .cornerRadius(10)
+        .font(.largeTitle)
+        .foregroundColor(.white)
+        .padding()
+        .background(Color.accentColor)
+        .cornerRadius(10)
       }
       
       Spacer()
       Text(resultText)
         .font(.largeTitle)
-
+        .animation(.default, value: resultText)
+      
       Spacer()
       Button(action: {
         if resultIsCorrect != nil && resultIsCorrect == true && currentQuestionIndex < questions.count - 1 {
