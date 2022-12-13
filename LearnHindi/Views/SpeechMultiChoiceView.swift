@@ -23,18 +23,19 @@ struct SpeechMultiChoiceView: View {
       Spacer()
       Text("Translate")
         .font(.title)
-      HStack {
-        Button(action: {
-          speechController.speakHindiText(text: question.speech)
-        }) {
-          Text(question.text)
-          Image(systemName: "speaker.wave.3")
-        }
-        .font(.largeTitle)
-        .foregroundColor(.white)
-        .padding()
-        .background(Color.orange)
-        .cornerRadius(10)
+      Button(action: {
+        speechController.speakHindiText(text: question.speech)
+      }) {
+        Text(question.text)
+        Image(systemName: "speaker.wave.3")
+      }
+      .font(.largeTitle)
+      .foregroundColor(.white)
+      .padding()
+      .background(Color.orange)
+      .cornerRadius(10)
+      .onAppear {
+        speechController.speakHindiText(text: question.speech)
       }
       
       Spacer()
