@@ -16,28 +16,43 @@ struct QuestionsView: View {
     "Question \(questionNumber) of \(questions.count)"
   }
   
+  @State private var showFinalView = false
+  
   var body: some View {
-    VStack {
-      ProgressView(value: progress) {
-        Text(progressText)
+    ZStack {
+      if showFinalView {
+        FinalView()
+          .transition(.push(from: .trailing))
+        Spacer()
+      } else {
+        VStack {
+          ProgressView(value: progress) {
+            Text(progressText)
+          }
+          .padding(20)
+          
+          Spacer()
+          SpeechMultiChoiceView(question: currentQuestion, onNext: showNextQuestionWithAnimation)
+            .id(questionNumber)
+            .transition(.push(from: .trailing))
+        }
       }
-      .padding(20)
-      
-      Spacer()
-      SpeechMultiChoiceView(question: currentQuestion, onNext: nextQuestion)
-        .id(questionNumber)
-        .transition(.push(from: .trailing))
+    }
+  }
+  
+  func showNextQuestionWithAnimation() {
+    withAnimation {
+      nextQuestion()
     }
   }
   
   func nextQuestion() {
     if questionNumber == questions.count {
+      showFinalView = true
       return
     }
     
-    withAnimation {
-      questionNumber += 1
-    }
+    questionNumber += 1
   }
 }
 
