@@ -15,6 +15,7 @@
 		0A7982BD25A0720B00B8E584 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7982BC25A0720B00B8E584 /* QuestionsView.swift */; };
 		0A7982BF25A0720C00B8E584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7982BE25A0720C00B8E584 /* Assets.xcassets */; };
 		0A7982C225A0720C00B8E584 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7982C125A0720C00B8E584 /* Preview Assets.xcassets */; };
+		0ABDE111294E49F900F159DA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDE110294E49F900F159DA /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0A7982BE25A0720C00B8E584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A7982C125A0720C00B8E584 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A7982C325A0720C00B8E584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABDE110294E49F900F159DA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				0A7982BC25A0720B00B8E584 /* QuestionsView.swift */,
 				0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */,
+				0ABDE110294E49F900F159DA /* ResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceView.swift in Sources */,
 				0A7982BB25A0720B00B8E584 /* LearnHindiApp.swift in Sources */,
 				0A2B6E8F25A1C7F0005C772D /* AnswerChoice.swift in Sources */,
+				0ABDE111294E49F900F159DA /* ResultView.swift in Sources */,
 				0A3A89152946024E003116B0 /* SpeechController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

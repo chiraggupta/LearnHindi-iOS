@@ -7,13 +7,8 @@ struct SpeechMultiChoiceView: View {
   let question: SpeechMultiChoiceQuestion
   let onNext: () -> Void
   
-  @State private var resultIsCorrect: Bool?
-  private var resultText: String {
-    guard let resultIsCorrect = resultIsCorrect else {
-      return " "
-    }
-    return resultIsCorrect ? "Correct Answer ✅" : "Try again ❌"
-  }
+  @State private var resultIsCorrect: Bool = false
+  @State private var showResult: Bool = false
   
   let speechController = SpeechController()
   
@@ -42,6 +37,7 @@ struct SpeechMultiChoiceView: View {
       ForEach(question.answerChoices, id: \.answer) { answerOption in
         Button(action: {
           resultIsCorrect = answerOption.isCorrect
+          showResult = true
         }) {
           Text(answerOption.answer)
         }
@@ -51,21 +47,13 @@ struct SpeechMultiChoiceView: View {
         .background(Color.accentColor)
         .cornerRadius(10)
       }
-      
-      Spacer()
-      Text(resultText)
-        .font(.largeTitle)
-      
-      Spacer()
-      Button(action: {
-        if resultIsCorrect != nil && resultIsCorrect == true {
-          onNext()
-        }
-      }) {
-        Text("Next")
+      .sheet(isPresented: $showResult) {
+        ResultView(isCorrect: $resultIsCorrect, onNext: onNext)
+          .presentationDetents([.fraction(0.15)])
       }
-      .font(.title3)
-      .disabled(!(resultIsCorrect ?? false))
+      Spacer()
+      Spacer()
+      Spacer()
     }
   }
 }
