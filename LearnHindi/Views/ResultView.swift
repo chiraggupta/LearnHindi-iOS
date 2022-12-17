@@ -6,16 +6,12 @@ struct ResultView: View {
   @Binding var isCorrect: Bool
   let onNext: () -> Void
   
-  private var resultText: String {
-    return isCorrect ? "Correct Answer 🎉" : "Try again ⛔️ "
-  }
-  
   var body: some View {
     VStack {
-      Text(resultText)
-        .font(.title2)
-      
       if isCorrect {
+        Text("Correct Answer 🎉")
+          .font(.title2)
+        
         Button(action: {
           onNext()
         }) {
@@ -28,6 +24,9 @@ struct ResultView: View {
         .background(.green)
         .cornerRadius(10)
         .padding(.horizontal, 20)
+      } else {
+        Text("Sorry, try again 😕")
+          .font(.title)
       }
     }
   }
