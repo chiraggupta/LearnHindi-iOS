@@ -37,9 +37,41 @@ extension SpeechMultiChoiceQuestion {
         AnswerChoice(answer: "Eat", isCorrect: false),
         AnswerChoice(answer: "Drink", isCorrect: true)
       ]),
+      SpeechMultiChoiceQuestion(text: "khaana", speech: "खाना", answerChoices: [
+        AnswerChoice(answer: "Food", isCorrect: true),
+        AnswerChoice(answer: "Drink", isCorrect: false)
+      ]),
       SpeechMultiChoiceQuestion(text: "chaaval", speech: "चावल", answerChoices: [
         AnswerChoice(answer: "Bread", isCorrect: false),
         AnswerChoice(answer: "Rice", isCorrect: true)
+      ]),
+      SpeechMultiChoiceQuestion(text: "anda", speech: "अंडा", answerChoices: [
+        AnswerChoice(answer: "Bread", isCorrect: false),
+        AnswerChoice(answer: "Egg", isCorrect: true)
+      ]),
+      SpeechMultiChoiceQuestion(text: "sabzi", speech: "सब्ज़ी", answerChoices: [
+        AnswerChoice(answer: "Fruit", isCorrect: false),
+        AnswerChoice(answer: "Vegetable", isCorrect: true)
+      ]),
+      SpeechMultiChoiceQuestion(text: "fal", speech: "फल", answerChoices: [
+        AnswerChoice(answer: "Fruit", isCorrect: true),
+        AnswerChoice(answer: "Vegetable", isCorrect: false)
+      ]),
+      SpeechMultiChoiceQuestion(text: "kapda", speech: "कपड़ा", answerChoices: [
+        AnswerChoice(answer: "Cloth", isCorrect: true),
+        AnswerChoice(answer: "Shoe", isCorrect: false)
+      ]),
+      SpeechMultiChoiceQuestion(text: "joota", speech: "जूता", answerChoices: [
+        AnswerChoice(answer: "Cloth", isCorrect: false),
+        AnswerChoice(answer: "Shoe", isCorrect: true)
+      ]),
+      SpeechMultiChoiceQuestion(text: "haath", speech: "हाथ", answerChoices: [
+        AnswerChoice(answer: "Hand", isCorrect: true),
+        AnswerChoice(answer: "Leg", isCorrect: false)
+      ]),
+      SpeechMultiChoiceQuestion(text: "paer", speech: "पैर", answerChoices: [
+        AnswerChoice(answer: "Hand", isCorrect: false),
+        AnswerChoice(answer: "Leg", isCorrect: true)
       ])
     ]
   }
