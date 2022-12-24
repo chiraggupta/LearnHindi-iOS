@@ -1,7 +1,7 @@
 {
 	"questions": [
 		{
-			"question_text": "ladaka",
+			"question_text": "Ladaka",
 			"question_speech": "लड़का",
 			"answer_choices": [
 				"Boy",
@@ -10,7 +10,7 @@
 			"answer": "Boy"
 		},
 		{
-			"question_text": "ladake",
+			"question_text": "Ladake",
 			"question_speech": "लड़के",
 			"answer_choices": [
 				"Boys",
@@ -19,7 +19,7 @@
 			"answer": "Boys"
 		},
 		{
-			"question_text": "ladakee",
+			"question_text": "Ladakee",
 			"question_speech": "लड़की",
 			"answer_choices": [
 				"Boy",
@@ -28,7 +28,7 @@
 			"answer": "Girl"
 		},
 		{
-			"question_text": "ladakiyaan",
+			"question_text": "Ladakiyaan",
 			"question_speech": "लड़कियाँ",
 			"answer_choices": [
 				"Boys",
@@ -37,7 +37,7 @@
 			"answer": "Girls"
 		},
 		{
-			"question_text": "aadmee",
+			"question_text": "Aadmee",
 			"question_speech": "आदमी",
 			"answer_choices": [
 				"Man",
@@ -46,7 +46,7 @@
 			"answer": "Man"
 		},
 		{
-			"question_text": "aurat",
+			"question_text": "Aurat",
 			"question_speech": "औरत",
 			"answer_choices": [
 				"Man",
@@ -55,7 +55,7 @@
 			"answer": "Woman"
 		},
 		{
-			"question_text": "paani",
+			"question_text": "Paani",
 			"question_speech": "पानी",
 			"answer_choices": [
 				"Milk",
@@ -64,7 +64,7 @@
 			"answer": "Water"
 		},
 		{
-			"question_text": "doodh",
+			"question_text": "Doodh",
 			"question_speech": "दूध",
 			"answer_choices": [
 				"Milk",
@@ -73,7 +73,7 @@
 			"answer": "Milk"
 		},
 		{
-			"question_text": "peena",
+			"question_text": "Peena",
 			"question_speech": "पीना",
 			"answer_choices": [
 				"Eat",
@@ -82,7 +82,7 @@
 			"answer": "Drink"
 		},
 		{
-			"question_text": "khaana",
+			"question_text": "Khaana",
 			"question_speech": "खाना",
 			"answer_choices": [
 				"Food",
@@ -91,7 +91,7 @@
 			"answer": "Food"
 		},
 		{
-			"question_text": "khaana",
+			"question_text": "Khaana",
 			"question_speech": "खाना",
 			"answer_choices": [
 				"Food",
@@ -100,7 +100,7 @@
 			"answer": "Food"
 		},
 		{
-			"question_text": "chaaval",
+			"question_text": "Chaaval",
 			"question_speech": "चावल",
 			"answer_choices": [
 				"Bread",
@@ -109,7 +109,7 @@
 			"answer": "Rice"
 		},
 		{
-			"question_text": "anda",
+			"question_text": "Anda",
 			"question_speech": "अंडा",
 			"answer_choices": [
 				"Bread",
@@ -118,7 +118,7 @@
 			"answer": "Egg"
 		},
 		{
-			"question_text": "sabzi",
+			"question_text": "Sabzi",
 			"question_speech": "सब्ज़ी",
 			"answer_choices": [
 				"Fruit",
@@ -127,7 +127,7 @@
 			"answer": "Vegetable"
 		},
 		{
-			"question_text": "sabziyaan",
+			"question_text": "Sabziyaan",
 			"question_speech": "सब्ज़ियां",
 			"answer_choices": [
 				"Fruits",
@@ -136,7 +136,7 @@
 			"answer": "Vegetables"
 		},
 		{
-			"question_text": "fal",
+			"question_text": "Fal",
 			"question_speech": "फल",
 			"answer_choices": [
 				"Fruit",
@@ -145,7 +145,7 @@
 			"answer": "Fruit"
 		},
 		{
-			"question_text": "kapada",
+			"question_text": "Kapada",
 			"question_speech": "कपड़ा",
 			"answer_choices": [
 				"Cloth",
@@ -154,7 +154,7 @@
 			"answer": "Cloth"
 		},
 		{
-			"question_text": "kapade",
+			"question_text": "Kapade",
 			"question_speech": "कपड़े",
 			"answer_choices": [
 				"Clothes",
@@ -163,7 +163,7 @@
 			"answer": "Clothes"
 		},
 		{
-			"question_text": "joota",
+			"question_text": "Joota",
 			"question_speech": "जूता",
 			"answer_choices": [
 				"Cloth",
@@ -172,7 +172,7 @@
 			"answer": "Shoe"
 		},
 		{
-			"question_text": "joote",
+			"question_text": "Joote",
 			"question_speech": "जूते",
 			"answer_choices": [
 				"Clothes",
@@ -181,7 +181,7 @@
 			"answer": "Shoes"
 		},
 		{
-			"question_text": "haath",
+			"question_text": "Haath",
 			"question_speech": "हाथ",
 			"answer_choices": [
 				"Hand",
@@ -190,7 +190,7 @@
 			"answer": "Hand"
 		},
 		{
-			"question_text": "paer",
+			"question_text": "Paer",
 			"question_speech": "पैर",
 			"answer_choices": [
 				"Hand",
@@ -199,7 +199,7 @@
 			"answer": "Leg"
 		},
 		{
-			"question_text": "garam",
+			"question_text": "Garam",
 			"question_speech": "गरम",
 			"answer_choices": [
 				"Hot",
@@ -208,7 +208,7 @@
 			"answer": "Hot"
 		},
 		{
-			"question_text": "thanda",
+			"question_text": "Thanda",
 			"question_speech": "ठंडा",
 			"answer_choices": [
 				"Hot",
@@ -217,13 +217,148 @@
 			"answer": "Cold"
 		},
 		{
-			"question_text": "garmee",
+			"question_text": "Garmee",
 			"question_speech": "गर्मी",
 			"answer_choices": [
 				"Heat",
 				"Cold"
 			],
 			"answer": "Heat"
+		},
+		{
+			"question_text": "Haan",
+			"question_speech": "हां",
+			"answer_choices": [
+				"Yes",
+				"No"
+			],
+			"answer": "Yes"
+		},
+		{
+			"question_text": "Nahin",
+			"question_speech": "नहीं",
+			"answer_choices": [
+				"Yes",
+				"No"
+			],
+			"answer": "No"
+		},
+		{
+			"question_text": "Achchha",
+			"question_speech": "अच्छा",
+			"answer_choices": [
+				"Good",
+				"Bad"
+			],
+			"answer": "Good"
+		},
+		{
+			"question_text": "Ganda",
+			"question_speech": "गंदा",
+			"answer_choices": [
+				"Good",
+				"Bad"
+			],
+			"answer": "Bad"
+		},
+		{
+			"question_text": "Saaf",
+			"question_speech": "साफ़",
+			"answer_choices": [
+				"Dirty",
+				"Clean"
+			],
+			"answer": "Clean"
+		},
+		{
+			"question_text": "Ganda",
+			"question_speech": "गंदा",
+			"answer_choices": [
+				"Dirty",
+				"Clean"
+			],
+			"answer": "Dirty"
+		},
+		{
+			"question_text": "Pasand",
+			"question_speech": "पसंद",
+			"answer_choices": [
+				"Like",
+				"Don't Like"
+			],
+			"answer": "Like"
+		},
+		{
+			"question_text": "Nahin Pasand",
+			"question_speech": "नहीं पसंद",
+			"answer_choices": [
+				"Like",
+				"Don't Like"
+			],
+			"answer": "Dislike"
+		},
+		{
+			"question_text": "Main",
+			"question_speech": "आप",
+			"answer_choices": [
+				"You",
+				"I"
+			],
+			"answer": "I"
+		},
+		{
+			"question_text": "Aap",
+			"question_speech": "आप",
+			"answer_choices": [
+				"You",
+				"I"
+			],
+			"answer": "You"
+		},
+		{
+			"question_text": "Hum",
+			"question_speech": "हम",
+			"answer_choices": [
+				"We",
+				"They"
+			],
+			"answer": "We"
+		},
+		{
+			"question_text": "Vo",
+			"question_speech": "वो",
+			"answer_choices": [
+				"He",
+				"Me"
+			],
+			"answer": "He"
+		},
+		{
+			"question_text": "Vo",
+			"question_speech": "वो",
+			"answer_choices": [
+				"Me",
+				"She"
+			],
+			"answer": "She"
+		},
+		{
+			"question_text": "Mera",
+			"question_speech": "मेरा",
+			"answer_choices": [
+				"My",
+				"Your"
+			],
+			"answer": "My"
+		},
+		{
+			"question_text": "Aapka",
+			"question_speech": "आपका",
+			"answer_choices": [
+				"My",
+				"Your"
+			],
+			"answer": "Your"
 		}
 	]
 }
