@@ -1,1 +1,24 @@
+## Xcode User settings
 xcuserdata/
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Keys
+service-account-key.json
+
+# Output JSON
+speech-multichoice-questions.json
+
+# Mac OS files
+.DS_Store
