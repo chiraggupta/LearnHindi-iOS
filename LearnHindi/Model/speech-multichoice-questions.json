@@ -10,6 +10,15 @@
 			"answer": "Boy"
 		},
 		{
+			"question_text": "ladake",
+			"question_speech": "लड़के",
+			"answer_choices": [
+				"Boys",
+				"Girls"
+			],
+			"answer": "Boys"
+		},
+		{
 			"question_text": "ladakee",
 			"question_speech": "लड़की",
 			"answer_choices": [
@@ -17,6 +26,15 @@
 				"Girl"
 			],
 			"answer": "Girl"
+		},
+		{
+			"question_text": "ladakiyaan",
+			"question_speech": "लड़कियाँ",
+			"answer_choices": [
+				"Boys",
+				"Girls"
+			],
+			"answer": "Girls"
 		},
 		{
 			"question_text": "aadmee",
@@ -73,6 +91,15 @@
 			"answer": "Food"
 		},
 		{
+			"question_text": "khaana",
+			"question_speech": "खाना",
+			"answer_choices": [
+				"Food",
+				"Drink"
+			],
+			"answer": "Food"
+		},
+		{
 			"question_text": "chaaval",
 			"question_speech": "चावल",
 			"answer_choices": [
@@ -100,6 +127,15 @@
 			"answer": "Vegetable"
 		},
 		{
+			"question_text": "sabziyaan",
+			"question_speech": "सब्ज़ियां",
+			"answer_choices": [
+				"Fruits",
+				"Vegetables"
+			],
+			"answer": "Vegetables"
+		},
+		{
 			"question_text": "fal",
 			"question_speech": "फल",
 			"answer_choices": [
@@ -109,13 +145,22 @@
 			"answer": "Fruit"
 		},
 		{
-			"question_text": "kapda",
+			"question_text": "kapada",
 			"question_speech": "कपड़ा",
 			"answer_choices": [
 				"Cloth",
 				"Shoe"
 			],
 			"answer": "Cloth"
+		},
+		{
+			"question_text": "kapade",
+			"question_speech": "कपड़े",
+			"answer_choices": [
+				"Clothes",
+				"Shoes"
+			],
+			"answer": "Clothes"
 		},
 		{
 			"question_text": "joota",
@@ -125,6 +170,15 @@
 				"Shoe"
 			],
 			"answer": "Shoe"
+		},
+		{
+			"question_text": "joote",
+			"question_speech": "जूते",
+			"answer_choices": [
+				"Clothes",
+				"Shoes"
+			],
+			"answer": "Shoes"
 		},
 		{
 			"question_text": "haath",
@@ -143,6 +197,33 @@
 				"Leg"
 			],
 			"answer": "Leg"
+		},
+		{
+			"question_text": "garam",
+			"question_speech": "गरम",
+			"answer_choices": [
+				"Hot",
+				"Cold"
+			],
+			"answer": "Hot"
+		},
+		{
+			"question_text": "thanda",
+			"question_speech": "ठंडा",
+			"answer_choices": [
+				"Hot",
+				"Cold"
+			],
+			"answer": "Cold"
+		},
+		{
+			"question_text": "garmee",
+			"question_speech": "गर्मी",
+			"answer_choices": [
+				"Heat",
+				"Cold"
+			],
+			"answer": "Heat"
 		}
 	]
 }
