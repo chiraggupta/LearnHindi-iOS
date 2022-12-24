@@ -58,6 +58,6 @@ struct QuestionsView: View {
 
 struct QuestionsView_Previews: PreviewProvider {
   static var previews: some View {
-    QuestionsView(questions: SpeechMultiChoiceQuestion.questions)
+    QuestionsView(questions: SpeechMultiChoiceQuestionsData.sampleQuestions())
   }
 }

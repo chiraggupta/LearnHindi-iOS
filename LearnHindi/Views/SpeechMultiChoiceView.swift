@@ -61,8 +61,10 @@ struct SpeechMultiChoiceView: View {
 struct HindiSpeechCard_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SpeechMultiChoiceView(question: SpeechMultiChoiceQuestion.questions[0], onNext: {})
-        .navigationTitle("Learn Hindi 🇮🇳")
+      SpeechMultiChoiceView(
+        question: SpeechMultiChoiceQuestionsData.sampleQuestions()[0],
+        onNext: {})
+      .navigationTitle("Learn Hindi 🇮🇳")
     }
   }
 }

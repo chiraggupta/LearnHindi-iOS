@@ -1,0 +1,13 @@
+{"questions": [
+  {
+    "question_text":"ladaka",
+    "question_speech":"लड़का",
+    "answer_choices":["Boy","Girl"],
+    "answer":"Boy"
+},{
+    "question_text":"ladakee",
+    "question_speech":"लड़की",
+    "answer_choices": ["Boy","Girl"],
+    "answer":"Girl"
+  }]
+}
