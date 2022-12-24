@@ -19,9 +19,9 @@ struct SpeechMultiChoiceView: View {
       Text("Translate")
         .font(.title)
       Button(action: {
-        speechController.speakHindiText(text: question.speech)
+        speechController.speakHindiText(text: question.questionSpeech)
       }) {
-        Text(question.text)
+        Text(question.questionText)
         Image(systemName: "speaker.wave.3")
       }
       .font(.largeTitle)
@@ -30,16 +30,16 @@ struct SpeechMultiChoiceView: View {
       .background(Color.orange)
       .cornerRadius(10)
       .onAppear {
-        speechController.speakHindiText(text: question.speech)
+        speechController.speakHindiText(text: question.questionSpeech)
       }
       
       Spacer()
-      ForEach(question.answerChoices, id: \.answer) { answerOption in
+      ForEach(question.answerChoices, id: \.self) { choice in
         Button(action: {
-          resultIsCorrect = answerOption.isCorrect
+          resultIsCorrect = (choice == question.answer)
           showResult = true
         }) {
-          Text(answerOption.answer)
+          Text(choice)
         }
         .font(.largeTitle)
         .foregroundColor(.white)

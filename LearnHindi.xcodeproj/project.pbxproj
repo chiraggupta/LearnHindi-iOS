@@ -21,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		0A2B6E7425A1BD23005C772D /* SpeechMultiChoiceQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceQuestion.swift; sourceTree = "<group>"; };
-		0A2B6E8E25A1C7F0005C772D /* AnswerChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoice.swift; sourceTree = "<group>"; };
 		0A3A89142946024E003116B0 /* SpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
 		0A42FA7225A0D9ED000D45D9 /* SpeechMultiChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechMultiChoiceView.swift; sourceTree = "<group>"; };
 		0A7982B725A0720B00B8E584 /* LearnHindi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnHindi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,7 +185,6 @@
 				0A2B6E7525A1BD23005C772D /* SpeechMultiChoiceQuestion.swift in Sources */,
 				0A42FA7325A0D9ED000D45D9 /* SpeechMultiChoiceView.swift in Sources */,
 				0A7982BB25A0720B00B8E584 /* LearnHindiApp.swift in Sources */,
-				0A2B6E8F25A1C7F0005C772D /* AnswerChoice.swift in Sources */,
 				0ABDE111294E49F900F159DA /* ResultView.swift in Sources */,
 				0A3A89152946024E003116B0 /* SpeechController.swift in Sources */,
 				0ABDE113294E7A1200F159DA /* FinalView.swift in Sources */,
