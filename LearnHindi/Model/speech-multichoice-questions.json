@@ -1,13 +1,148 @@
-{"questions": [
-  {
-    "question_text":"ladaka",
-    "question_speech":"लड़का",
-    "answer_choices":["Boy","Girl"],
-    "answer":"Boy"
-},{
-    "question_text":"ladakee",
-    "question_speech":"लड़की",
-    "answer_choices": ["Boy","Girl"],
-    "answer":"Girl"
-  }]
+{
+	"questions": [
+		{
+			"question_text": "ladaka",
+			"question_speech": "लड़का",
+			"answer_choices": [
+				"Boy",
+				"Girl"
+			],
+			"answer": "Boy"
+		},
+		{
+			"question_text": "ladakee",
+			"question_speech": "लड़की",
+			"answer_choices": [
+				"Boy",
+				"Girl"
+			],
+			"answer": "Girl"
+		},
+		{
+			"question_text": "aadmee",
+			"question_speech": "आदमी",
+			"answer_choices": [
+				"Man",
+				"Woman"
+			],
+			"answer": "Man"
+		},
+		{
+			"question_text": "aurat",
+			"question_speech": "औरत",
+			"answer_choices": [
+				"Man",
+				"Woman"
+			],
+			"answer": "Woman"
+		},
+		{
+			"question_text": "paani",
+			"question_speech": "पानी",
+			"answer_choices": [
+				"Milk",
+				"Water"
+			],
+			"answer": "Water"
+		},
+		{
+			"question_text": "doodh",
+			"question_speech": "दूध",
+			"answer_choices": [
+				"Milk",
+				"Water"
+			],
+			"answer": "Milk"
+		},
+		{
+			"question_text": "peena",
+			"question_speech": "पीना",
+			"answer_choices": [
+				"Eat",
+				"Drink"
+			],
+			"answer": "Drink"
+		},
+		{
+			"question_text": "khaana",
+			"question_speech": "खाना",
+			"answer_choices": [
+				"Food",
+				"Drink"
+			],
+			"answer": "Food"
+		},
+		{
+			"question_text": "chaaval",
+			"question_speech": "चावल",
+			"answer_choices": [
+				"Bread",
+				"Rice"
+			],
+			"answer": "Rice"
+		},
+		{
+			"question_text": "anda",
+			"question_speech": "अंडा",
+			"answer_choices": [
+				"Bread",
+				"Egg"
+			],
+			"answer": "Egg"
+		},
+		{
+			"question_text": "sabzi",
+			"question_speech": "सब्ज़ी",
+			"answer_choices": [
+				"Fruit",
+				"Vegetable"
+			],
+			"answer": "Vegetable"
+		},
+		{
+			"question_text": "fal",
+			"question_speech": "फल",
+			"answer_choices": [
+				"Fruit",
+				"Vegetable"
+			],
+			"answer": "Fruit"
+		},
+		{
+			"question_text": "kapda",
+			"question_speech": "कपड़ा",
+			"answer_choices": [
+				"Cloth",
+				"Shoe"
+			],
+			"answer": "Cloth"
+		},
+		{
+			"question_text": "joota",
+			"question_speech": "जूता",
+			"answer_choices": [
+				"Cloth",
+				"Shoe"
+			],
+			"answer": "Shoe"
+		},
+		{
+			"question_text": "haath",
+			"question_speech": "हाथ",
+			"answer_choices": [
+				"Hand",
+				"Leg"
+			],
+			"answer": "Hand"
+		},
+		{
+			"question_text": "paer",
+			"question_speech": "पैर",
+			"answer_choices": [
+				"Hand",
+				"Leg"
+			],
+			"answer": "Leg"
+		}
+	]
 }
