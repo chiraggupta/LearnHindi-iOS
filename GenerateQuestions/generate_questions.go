@@ -44,12 +44,12 @@ func convertToJSON(values [][]interface{}) []byte {
 	questions := make([]SpeechMultiChoiceQuestion, len(values)-1)
 
 	for i, row := range values[1:] {
-		// [0: ~index~, 1: question_text, 2: ~question_speech_auto~, 3: question_speech, 4: answer_choice_1, 5: answer_choice_2, 6: answer]
+		// [0: question_text, 1: question_speech, 2: answer_choice_1, 3: answer_choice_2, 4: answer]
 		questions[i] = SpeechMultiChoiceQuestion{
-			QuestionText:   row[1].(string),
-			QuestionSpeech: row[3].(string),
-			AnswerChoices:  []string{row[4].(string), row[5].(string)},
-			Answer:         row[6].(string),
+			QuestionText:   row[0].(string),
+			QuestionSpeech: row[1].(string),
+			AnswerChoices:  []string{row[2].(string), row[3].(string)},
+			Answer:         row[4].(string),
 		}
 	}
 
