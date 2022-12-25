@@ -17,11 +17,11 @@ struct QuestionsView: View {
   }
   
   @State private var score = 0
-  @State private var showFinalView = false
+  @State private var showingFinalView = false
   
   var body: some View {
     ZStack {
-      if showFinalView {
+      if showingFinalView {
         VStack {
           FinalView(score: score, total: questions.count)
             .transition(.push(from: .trailing))
@@ -35,18 +35,21 @@ struct QuestionsView: View {
           .padding(20)
           
           Spacer()
-          SpeechMultiChoiceView(question: currentQuestion, onNext: showNextQuestionWithAnimation)
-            .id(questionNumber)
-            .transition(.push(from: .trailing))
+          SpeechMultiChoiceView(
+            question: currentQuestion,
+            onContinue: continuePressed
+          )
+          .id(questionNumber)
+          .transition(.push(from: .trailing))
         }
       }
     }
   }
   
-  func showNextQuestionWithAnimation(result: Bool) {
+  func continuePressed(result: Bool) {
     updateScore(result: result)
     withAnimation {
-      nextQuestion()
+      showNextQuestion()
     }
   }
   
@@ -56,9 +59,9 @@ struct QuestionsView: View {
     }
   }
   
-  func nextQuestion() {
+  func showNextQuestion() {
     if questionNumber == questions.count {
-      showFinalView = true
+      showingFinalView = true
       return
     }
     

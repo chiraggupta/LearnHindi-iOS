@@ -5,10 +5,10 @@ import AVFoundation
 
 struct SpeechMultiChoiceView: View {
   let question: SpeechMultiChoiceQuestion
-  let onNext: (Bool) -> Void
+  let onContinue: (Bool) -> Void
   
   @State private var resultIsCorrect: Bool = false
-  @State private var showResult: Bool = false
+  @State private var showingResult: Bool = false
   
   let speechController = SpeechController()
   
@@ -37,7 +37,7 @@ struct SpeechMultiChoiceView: View {
       ForEach(question.answerChoices, id: \.self) { choice in
         Button(action: {
           resultIsCorrect = (choice == question.answer)
-          showResult = true
+          showingResult = true
         }) {
           Text(choice)
         }
@@ -51,15 +51,15 @@ struct SpeechMultiChoiceView: View {
       Spacer()
       Spacer()
     }
-    .sheet(isPresented: $showResult) {
-      ResultView(isCorrect: $resultIsCorrect, onNext: onNext)
+    .sheet(isPresented: $showingResult) {
+      ResultView(isCorrect: $resultIsCorrect, onContinue: onContinue)
         .presentationDetents([.fraction(0.15)])
         .interactiveDismissDisabled()
     }
   }
   
   func getButtonColorForChoice(_ choice: String) -> Color {
-    if !showResult {
+    if !showingResult {
       return .accentColor
     }
     
@@ -72,7 +72,7 @@ struct HindiSpeechCard_Previews: PreviewProvider {
     NavigationView {
       SpeechMultiChoiceView(
         question: SpeechMultiChoiceQuestionsData.sampleQuestions()[0],
-        onNext: {_ in })
+        onContinue: {_ in })
       .navigationTitle("Learn Hindi 🇮🇳")
     }
   }

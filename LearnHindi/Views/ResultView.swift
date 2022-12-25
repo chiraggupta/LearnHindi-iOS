@@ -4,7 +4,7 @@ import SwiftUI
 
 struct ResultView: View {
   @Binding var isCorrect: Bool
-  let onNext: (Bool) -> Void
+  let onContinue: (Bool) -> Void
   
   var body: some View {
     VStack {
@@ -12,7 +12,7 @@ struct ResultView: View {
         .font(.title2)
       
       Button(action: {
-        onNext(isCorrect)
+        onContinue(isCorrect)
       }) {
         Text("Continue")
           .font(.title2)
@@ -33,12 +33,12 @@ struct ResultView_Previews: PreviewProvider {
       Spacer()
       Text("--- Correct Preview ---")
       Divider()
-      ResultView(isCorrect: .constant(true), onNext: {_ in })
+      ResultView(isCorrect: .constant(true), onContinue: {_ in })
       Spacer()
       
       Text("--- Incorrect Preview ---")
       Divider()
-      ResultView(isCorrect: .constant(false), onNext: {_ in })
+      ResultView(isCorrect: .constant(false), onContinue: {_ in })
       Spacer()
     }
   }
