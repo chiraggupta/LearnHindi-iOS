@@ -199,6 +199,42 @@
 			"answer": "Leg"
 		},
 		{
+			"question_text": "Din",
+			"question_speech": "दिन",
+			"answer_choices": [
+				"Day",
+				"Night"
+			],
+			"answer": "Day"
+		},
+		{
+			"question_text": "Raat",
+			"question_speech": "रात",
+			"answer_choices": [
+				"Day",
+				"Night"
+			],
+			"answer": "Night"
+		},
+		{
+			"question_text": "Subah",
+			"question_speech": "सुबह",
+			"answer_choices": [
+				"Morning",
+				"Evening"
+			],
+			"answer": "Morning"
+		},
+		{
+			"question_text": "Shaam",
+			"question_speech": "शाम",
+			"answer_choices": [
+				"Morning",
+				"Evening"
+			],
+			"answer": "Evening"
+		},
+		{
 			"question_text": "Garam",
 			"question_speech": "गरम",
 			"answer_choices": [
@@ -278,6 +314,60 @@
 				"Clean"
 			],
 			"answer": "Dirty"
+		},
+		{
+			"question_text": "Naya",
+			"question_speech": "नया",
+			"answer_choices": [
+				"New",
+				"Old"
+			],
+			"answer": "New"
+		},
+		{
+			"question_text": "Puraana",
+			"question_speech": "पुराना",
+			"answer_choices": [
+				"New",
+				"Old"
+			],
+			"answer": "Old"
+		},
+		{
+			"question_text": "Andar",
+			"question_speech": "अंदर",
+			"answer_choices": [
+				"In",
+				"Out"
+			],
+			"answer": "In"
+		},
+		{
+			"question_text": "Baahar",
+			"question_speech": "बाहर",
+			"answer_choices": [
+				"In",
+				"Out"
+			],
+			"answer": "Out"
+		},
+		{
+			"question_text": "Oopar",
+			"question_speech": "ऊपर",
+			"answer_choices": [
+				"Up",
+				"Down"
+			],
+			"answer": "Up"
+		},
+		{
+			"question_text": "Neeche",
+			"question_speech": "नीचे",
+			"answer_choices": [
+				"Up",
+				"Down"
+			],
+			"answer": "Down"
 		},
 		{
 			"question_text": "Pasand",
