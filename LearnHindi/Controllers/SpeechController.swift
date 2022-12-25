@@ -16,7 +16,7 @@ class SpeechController {
   func speakHindiText(text: String) {
     let utterance = AVSpeechUtterance(string: text)
     utterance.voice = AVSpeechSynthesisVoice(language: "hi-IN")
-    utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.9
+    utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.6
     
     speechSynthesizer.speak(utterance)
   }
