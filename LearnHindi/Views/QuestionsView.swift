@@ -15,16 +15,18 @@ struct QuestionsView: View {
   private var progressText: String {
     "Question \(questionNumber) of \(questions.count)"
   }
-
+  
   @State private var score = 0
   @State private var showFinalView = false
   
   var body: some View {
     ZStack {
       if showFinalView {
-        FinalView()
-          .transition(.push(from: .trailing))
-        Spacer()
+        VStack {
+          FinalView(score: score, total: questions.count)
+            .transition(.push(from: .trailing))
+          Spacer()
+        }
       } else {
         VStack {
           ProgressView(value: progress) {
@@ -47,12 +49,11 @@ struct QuestionsView: View {
       nextQuestion()
     }
   }
-
+  
   func updateScore(result: Bool) {
     if result {
       score += 1
     }
-    print("Score: \(score)/\(questions.count)")
   }
   
   func nextQuestion() {
