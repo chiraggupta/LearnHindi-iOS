@@ -13,7 +13,11 @@ class SpeechController {
     }
   }
   
-  func speakHindiText(text: String) {
+  func speakHindiText(_ text: String) {
+    if speechSynthesizer.isSpeaking {
+      return
+    }
+    
     let utterance = AVSpeechUtterance(string: text)
     utterance.voice = AVSpeechSynthesisVoice(language: "hi-IN")
     utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.6

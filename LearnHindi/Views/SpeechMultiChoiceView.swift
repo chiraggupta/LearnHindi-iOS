@@ -19,7 +19,7 @@ struct SpeechMultiChoiceView: View {
       Text("Translate")
         .font(.title)
       Button(action: {
-        speechController.speakHindiText(text: question.questionSpeech)
+        speechController.speakHindiText(question.questionSpeech)
       }) {
         Text(question.questionText)
         Image(systemName: "speaker.wave.3")
@@ -30,7 +30,7 @@ struct SpeechMultiChoiceView: View {
       .background(Color.orange)
       .cornerRadius(10)
       .onAppear {
-        speechController.speakHindiText(text: question.questionSpeech)
+        speechController.speakHindiText(question.questionSpeech)
       }
       
       Spacer()
