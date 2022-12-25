@@ -10,7 +10,7 @@
 			"answer": "Boy"
 		},
 		{
-			"question_text": "Ladake",
+			"question_text": "Ladakay",
 			"question_speech": "लड़के",
 			"answer_choices": [
 				"Boys",
@@ -19,7 +19,7 @@
 			"answer": "Boys"
 		},
 		{
-			"question_text": "Ladakee",
+			"question_text": "Ladaki",
 			"question_speech": "लड़की",
 			"answer_choices": [
 				"Boy",
@@ -37,7 +37,7 @@
 			"answer": "Girls"
 		},
 		{
-			"question_text": "Aadmee",
+			"question_text": "Aadmi",
 			"question_speech": "आदमी",
 			"answer_choices": [
 				"Man",
@@ -172,7 +172,7 @@
 			"answer": "Shoe"
 		},
 		{
-			"question_text": "Joote",
+			"question_text": "Jootay",
 			"question_speech": "जूते",
 			"answer_choices": [
 				"Clothes",
@@ -295,11 +295,11 @@
 				"Like",
 				"Don't Like"
 			],
-			"answer": "Dislike"
+			"answer": "Don't Like"
 		},
 		{
 			"question_text": "Main",
-			"question_speech": "आप",
+			"question_speech": "मैं",
 			"answer_choices": [
 				"You",
 				"I"
