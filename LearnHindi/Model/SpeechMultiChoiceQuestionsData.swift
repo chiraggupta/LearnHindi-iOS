@@ -3,7 +3,11 @@
 import Foundation
 
 struct SpeechMultiChoiceQuestionsData: Codable {
-  var questions: [SpeechMultiChoiceQuestion]
+  private let questions: [SpeechMultiChoiceQuestion]
+  
+  func getRandomQuestions(count: Int) -> [SpeechMultiChoiceQuestion] {
+    return Array(questions.shuffled()[..<count])
+  }
 }
 
 extension SpeechMultiChoiceQuestionsData {
