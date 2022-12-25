@@ -14,7 +14,6 @@ struct SpeechMultiChoiceView: View {
   
   var body: some View {
     VStack {
-      
       Spacer()
       Text("Translate")
         .font(.title)
@@ -27,13 +26,14 @@ struct SpeechMultiChoiceView: View {
       .font(.largeTitle)
       .foregroundColor(.white)
       .padding()
-      .background(Color.orange)
+      .background(.gray)
       .cornerRadius(10)
       .onAppear {
         speechController.speakHindiText(question.questionSpeech)
       }
       
       Spacer()
+      
       ForEach(question.answerChoices, id: \.self) { choice in
         Button(action: {
           resultIsCorrect = (choice == question.answer)
@@ -44,18 +44,26 @@ struct SpeechMultiChoiceView: View {
         .font(.largeTitle)
         .foregroundColor(.white)
         .padding()
-        .background(Color.accentColor)
+        .background(getButtonColorForChoice(choice))
         .cornerRadius(10)
-      }
-      .sheet(isPresented: $showResult) {
-        ResultView(isCorrect: $resultIsCorrect, onNext: onNext)
-          .presentationDetents([.fraction(0.15)])
-          .interactiveDismissDisabled()
       }
       Spacer()
       Spacer()
       Spacer()
     }
+    .sheet(isPresented: $showResult) {
+      ResultView(isCorrect: $resultIsCorrect, onNext: onNext)
+        .presentationDetents([.fraction(0.15)])
+        .interactiveDismissDisabled()
+    }
+  }
+  
+  func getButtonColorForChoice(_ choice: String) -> Color {
+    if !showResult {
+      return .accentColor
+    }
+    
+    return (choice == question.answer) ? .green : .red
   }
 }
 
