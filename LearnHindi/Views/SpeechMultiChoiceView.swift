@@ -50,6 +50,7 @@ struct SpeechMultiChoiceView: View {
       .sheet(isPresented: $showResult) {
         ResultView(isCorrect: $resultIsCorrect, onNext: onNext)
           .presentationDetents([.fraction(0.15)])
+          .interactiveDismissDisabled()
       }
       Spacer()
       Spacer()
