@@ -15,7 +15,8 @@ struct QuestionsView: View {
   private var progressText: String {
     "Question \(questionNumber) of \(questions.count)"
   }
-  
+
+  @State private var score = 0
   @State private var showFinalView = false
   
   var body: some View {
@@ -40,10 +41,18 @@ struct QuestionsView: View {
     }
   }
   
-  func showNextQuestionWithAnimation() {
+  func showNextQuestionWithAnimation(result: Bool) {
+    updateScore(result: result)
     withAnimation {
       nextQuestion()
     }
+  }
+
+  func updateScore(result: Bool) {
+    if result {
+      score += 1
+    }
+    print("Score: \(score)/\(questions.count)")
   }
   
   func nextQuestion() {

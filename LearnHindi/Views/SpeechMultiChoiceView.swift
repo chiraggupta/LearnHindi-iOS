@@ -5,7 +5,7 @@ import AVFoundation
 
 struct SpeechMultiChoiceView: View {
   let question: SpeechMultiChoiceQuestion
-  let onNext: () -> Void
+  let onNext: (Bool) -> Void
   
   @State private var resultIsCorrect: Bool = false
   @State private var showResult: Bool = false
@@ -63,7 +63,7 @@ struct HindiSpeechCard_Previews: PreviewProvider {
     NavigationView {
       SpeechMultiChoiceView(
         question: SpeechMultiChoiceQuestionsData.sampleQuestions()[0],
-        onNext: {})
+        onNext: {_ in })
       .navigationTitle("Learn Hindi 🇮🇳")
     }
   }
