@@ -8,26 +8,21 @@ struct ResultView: View {
   
   var body: some View {
     VStack {
-      if isCorrect {
-        Text("Correct Answer 🎉")
+      Text(isCorrect ? "Correct Answer 🎉" : "Sorry, that's wrong 😕")
+        .font(.title2)
+      
+      Button(action: {
+        onNext()
+      }) {
+        Text("Continue")
           .font(.title2)
-        
-        Button(action: {
-          onNext()
-        }) {
-          Text("Continue")
-            .font(.title2)
-            .frame(maxWidth: .infinity)
-            .foregroundColor(.white)
-            .padding(.vertical, 10)
-        }
-        .background(.green)
-        .cornerRadius(10)
-        .padding(.horizontal, 20)
-      } else {
-        Text("Sorry, try again 😕")
-          .font(.title)
+          .frame(maxWidth: .infinity)
+          .foregroundColor(.white)
+          .padding(.vertical, 10)
       }
+      .background(isCorrect ? .green : .red)
+      .cornerRadius(10)
+      .padding(.horizontal, 20)
     }
   }
 }
