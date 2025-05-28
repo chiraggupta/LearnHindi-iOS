@@ -91,15 +91,6 @@
 			"answer": "Food"
 		},
 		{
-			"question_text": "Khaana",
-			"question_speech": "खाना",
-			"answer_choices": [
-				"Food",
-				"Drink"
-			],
-			"answer": "Food"
-		},
-		{
 			"question_text": "Chaaval",
 			"question_speech": "चावल",
 			"answer_choices": [
@@ -406,6 +397,15 @@
 			"answer": "You"
 		},
 		{
+			"question_text": "Tum",
+			"question_speech": "तुम",
+			"answer_choices": [
+				"You",
+				"I"
+			],
+			"answer": "You"
+		},
+		{
 			"question_text": "Hum",
 			"question_speech": "हम",
 			"answer_choices": [
@@ -449,6 +449,96 @@
 				"Your"
 			],
 			"answer": "Your"
+		},
+		{
+			"question_text": "Ghar",
+			"question_speech": "घर",
+			"answer_choices": [
+				"Home",
+				"School"
+			],
+			"answer": "Home"
+		},
+		{
+			"question_text": "Bhai",
+			"question_speech": "भाई",
+			"answer_choices": [
+				"Brother",
+				"Sister"
+			],
+			"answer": "Brother"
+		},
+		{
+			"question_text": "Bahan",
+			"question_speech": "बहन",
+			"answer_choices": [
+				"Brother",
+				"Sister"
+			],
+			"answer": "Sister"
+		},
+		{
+			"question_text": "Dost",
+			"question_speech": "दोस्त",
+			"answer_choices": [
+				"Friend",
+				"Sister"
+			],
+			"answer": "Friend"
+		},
+		{
+			"question_text": "Aap kaise ho?",
+			"question_speech": "आप कैसे हो?",
+			"answer_choices": [
+				"How are you?",
+				"Who am I?"
+			],
+			"answer": "How are you?"
+		},
+		{
+			"question_text": "Main theek hoon",
+			"question_speech": "मैं ठीक हूँ",
+			"answer_choices": [
+				"I am fine",
+				"You are sad"
+			],
+			"answer": "I am fine"
+		},
+		{
+			"question_text": "Main game khel rahi hoon",
+			"question_speech": "में गेम खेल रही हूँ",
+			"answer_choices": [
+				"I am playing a game",
+				"I am eating ice-cream"
+			],
+			"answer": "I am playing a game"
+		},
+		{
+			"question_text": "Main ice-cream kha rahin hoon",
+			"question_speech": "मैं ice-cream खा रहीं हूँ",
+			"answer_choices": [
+				"I am playing a game",
+				"I am eating ice-cream"
+			],
+			"answer": "I am eating ice-cream"
+		},
+		{
+			"question_text": "Main dekh rahi hoon",
+			"question_speech": "मैं देख रही हूं",
+			"answer_choices": [
+				"I am watching",
+				"I am reading"
+			],
+			"answer": "I am watching"
+		},
+		{
+			"question_text": "Main pad rahi hoon",
+			"question_speech": "मैं पढ़ रही हूं",
+			"answer_choices": [
+				"I am watching",
+				"I am reading"
+			],
+			"answer": "I am reading"
 		}
 	]
 }
