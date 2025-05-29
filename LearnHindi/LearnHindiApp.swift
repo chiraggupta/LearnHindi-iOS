@@ -8,7 +8,7 @@ struct LearnHindiApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        QuestionsView(questions: data.getRandomQuestions(count: 25))
+        QuestionsView(questions: data.getOrderedQuestions())
           .navigationTitle("Learn Hindi 🇮🇳")
       }
     }

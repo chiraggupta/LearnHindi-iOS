@@ -8,6 +8,14 @@ struct SpeechMultiChoiceQuestionsData: Codable {
   func getRandomQuestions(count: Int) -> [SpeechMultiChoiceQuestion] {
     return Array(questions.shuffled()[..<count])
   }
+  
+  func getOrderedQuestions() -> [SpeechMultiChoiceQuestion] {
+    let mustShow = questions.suffix(10).shuffled()
+    let remaining = questions.dropLast(10)
+    
+    let remaining20 = remaining.shuffled()[..<20]
+    return Array(remaining20 + mustShow)
+  }
 }
 
 extension SpeechMultiChoiceQuestionsData {
