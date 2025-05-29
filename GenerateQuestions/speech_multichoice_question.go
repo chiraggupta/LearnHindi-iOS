@@ -5,4 +5,5 @@ type SpeechMultiChoiceQuestion struct {
 	QuestionSpeech string   `json:"question_speech"`
 	AnswerChoices  []string `json:"answer_choices"`
 	Answer         string   `json:"answer"`
+	Include        string   `json:"include"`
 }
