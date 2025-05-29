@@ -5,16 +5,13 @@ import Foundation
 struct SpeechMultiChoiceQuestionsData: Codable {
   private let questions: [SpeechMultiChoiceQuestion]
   
-  func getRandomQuestions(count: Int) -> [SpeechMultiChoiceQuestion] {
-    return Array(questions.shuffled()[..<count])
-  }
-  
-  func getOrderedQuestions() -> [SpeechMultiChoiceQuestion] {
-    let mustShow = questions.suffix(10).shuffled()
-    let remaining = questions.dropLast(10)
+  func getQuestions(count: Int) -> [SpeechMultiChoiceQuestion] {
+    let alwaysQuestions = questions.filter { $0.include == .always }
+    let sometimesCount = count - alwaysQuestions.count
+    let allSometimesQuestions = questions.filter { $0.include == .sometimes }
+    let selectedSometimesQuestions = allSometimesQuestions.shuffled()[..<sometimesCount]
     
-    let remaining20 = remaining.shuffled()[..<20]
-    return Array(remaining20 + mustShow)
+    return Array(selectedSometimesQuestions + alwaysQuestions)
   }
 }
 
