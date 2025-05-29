@@ -6,12 +6,16 @@ struct SpeechMultiChoiceQuestionsData: Codable {
   private let questions: [SpeechMultiChoiceQuestion]
   
   func getQuestions(count: Int) -> [SpeechMultiChoiceQuestion] {
-    let alwaysQuestions = questions.filter { $0.include == .always }
-    let sometimesCount = count - alwaysQuestions.count
-    let allSometimesQuestions = questions.filter { $0.include == .sometimes }
-    let selectedSometimesQuestions = allSometimesQuestions.shuffled()[..<sometimesCount]
+    let alwaysQuestions = questions
+      .filter { $0.include == .always }
+      .shuffled()
     
-    return Array(selectedSometimesQuestions + alwaysQuestions)
+    let sometimesCount = count - alwaysQuestions.count
+    let sometimesQuestions = questions
+      .filter { $0.include == .sometimes }
+      .shuffled()[..<sometimesCount]
+    
+    return Array(sometimesQuestions + alwaysQuestions)
   }
 }
 
