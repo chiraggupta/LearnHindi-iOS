@@ -7,7 +7,8 @@
 				"Boy",
 				"Girl"
 			],
-			"answer": "Boy"
+			"answer": "Boy",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Ladakay",
@@ -16,7 +17,8 @@
 				"Boys",
 				"Girls"
 			],
-			"answer": "Boys"
+			"answer": "Boys",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Ladaki",
@@ -25,7 +27,8 @@
 				"Boy",
 				"Girl"
 			],
-			"answer": "Girl"
+			"answer": "Girl",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Ladakiyaan",
@@ -34,7 +37,8 @@
 				"Boys",
 				"Girls"
 			],
-			"answer": "Girls"
+			"answer": "Girls",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Aadmi",
@@ -43,7 +47,8 @@
 				"Man",
 				"Woman"
 			],
-			"answer": "Man"
+			"answer": "Man",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Aurat",
@@ -52,7 +57,8 @@
 				"Man",
 				"Woman"
 			],
-			"answer": "Woman"
+			"answer": "Woman",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Paani",
@@ -61,7 +67,8 @@
 				"Milk",
 				"Water"
 			],
-			"answer": "Water"
+			"answer": "Water",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Doodh",
@@ -70,7 +77,8 @@
 				"Milk",
 				"Water"
 			],
-			"answer": "Milk"
+			"answer": "Milk",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Peena",
@@ -79,7 +87,8 @@
 				"Eat",
 				"Drink"
 			],
-			"answer": "Drink"
+			"answer": "Drink",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Khaana",
@@ -88,7 +97,8 @@
 				"Food",
 				"Drink"
 			],
-			"answer": "Food"
+			"answer": "Food",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Chaaval",
@@ -97,7 +107,8 @@
 				"Bread",
 				"Rice"
 			],
-			"answer": "Rice"
+			"answer": "Rice",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Anda",
@@ -106,7 +117,8 @@
 				"Bread",
 				"Egg"
 			],
-			"answer": "Egg"
+			"answer": "Egg",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Sabzi",
@@ -115,7 +127,8 @@
 				"Fruit",
 				"Vegetable"
 			],
-			"answer": "Vegetable"
+			"answer": "Vegetable",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Sabziyaan",
@@ -124,7 +137,8 @@
 				"Fruits",
 				"Vegetables"
 			],
-			"answer": "Vegetables"
+			"answer": "Vegetables",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Fal",
@@ -133,7 +147,8 @@
 				"Fruit",
 				"Vegetable"
 			],
-			"answer": "Fruit"
+			"answer": "Fruit",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Kapada",
@@ -142,7 +157,8 @@
 				"Cloth",
 				"Shoe"
 			],
-			"answer": "Cloth"
+			"answer": "Cloth",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Kapade",
@@ -151,7 +167,8 @@
 				"Clothes",
 				"Shoes"
 			],
-			"answer": "Clothes"
+			"answer": "Clothes",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Joota",
@@ -160,7 +177,8 @@
 				"Cloth",
 				"Shoe"
 			],
-			"answer": "Shoe"
+			"answer": "Shoe",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Jootay",
@@ -169,7 +187,8 @@
 				"Clothes",
 				"Shoes"
 			],
-			"answer": "Shoes"
+			"answer": "Shoes",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Haath",
@@ -178,7 +197,8 @@
 				"Hand",
 				"Leg"
 			],
-			"answer": "Hand"
+			"answer": "Hand",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Paer",
@@ -187,7 +207,8 @@
 				"Hand",
 				"Leg"
 			],
-			"answer": "Leg"
+			"answer": "Leg",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Din",
@@ -196,7 +217,8 @@
 				"Day",
 				"Night"
 			],
-			"answer": "Day"
+			"answer": "Day",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Raat",
@@ -205,7 +227,8 @@
 				"Day",
 				"Night"
 			],
-			"answer": "Night"
+			"answer": "Night",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Subah",
@@ -214,7 +237,8 @@
 				"Morning",
 				"Evening"
 			],
-			"answer": "Morning"
+			"answer": "Morning",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Shaam",
@@ -223,7 +247,8 @@
 				"Morning",
 				"Evening"
 			],
-			"answer": "Evening"
+			"answer": "Evening",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Garam",
@@ -232,7 +257,8 @@
 				"Hot",
 				"Cold"
 			],
-			"answer": "Hot"
+			"answer": "Hot",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Thanda",
@@ -241,7 +267,8 @@
 				"Hot",
 				"Cold"
 			],
-			"answer": "Cold"
+			"answer": "Cold",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Garmee",
@@ -250,7 +277,8 @@
 				"Heat",
 				"Cold"
 			],
-			"answer": "Heat"
+			"answer": "Heat",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Haan",
@@ -259,7 +287,8 @@
 				"Yes",
 				"No"
 			],
-			"answer": "Yes"
+			"answer": "Yes",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Nahin",
@@ -268,7 +297,8 @@
 				"Yes",
 				"No"
 			],
-			"answer": "No"
+			"answer": "No",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Achchha",
@@ -277,7 +307,8 @@
 				"Good",
 				"Bad"
 			],
-			"answer": "Good"
+			"answer": "Good",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Ganda",
@@ -286,7 +317,8 @@
 				"Good",
 				"Bad"
 			],
-			"answer": "Bad"
+			"answer": "Bad",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Saaf",
@@ -295,7 +327,8 @@
 				"Dirty",
 				"Clean"
 			],
-			"answer": "Clean"
+			"answer": "Clean",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Ganda",
@@ -304,7 +337,8 @@
 				"Dirty",
 				"Clean"
 			],
-			"answer": "Dirty"
+			"answer": "Dirty",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Naya",
@@ -313,7 +347,8 @@
 				"New",
 				"Old"
 			],
-			"answer": "New"
+			"answer": "New",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Puraana",
@@ -322,7 +357,8 @@
 				"New",
 				"Old"
 			],
-			"answer": "Old"
+			"answer": "Old",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Andar",
@@ -331,7 +367,8 @@
 				"In",
 				"Out"
 			],
-			"answer": "In"
+			"answer": "In",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Baahar",
@@ -340,7 +377,8 @@
 				"In",
 				"Out"
 			],
-			"answer": "Out"
+			"answer": "Out",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Oopar",
@@ -349,7 +387,8 @@
 				"Up",
 				"Down"
 			],
-			"answer": "Up"
+			"answer": "Up",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Neeche",
@@ -358,7 +397,8 @@
 				"Up",
 				"Down"
 			],
-			"answer": "Down"
+			"answer": "Down",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Pasand",
@@ -367,7 +407,8 @@
 				"Like",
 				"Don't Like"
 			],
-			"answer": "Like"
+			"answer": "Like",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Nahin Pasand",
@@ -376,7 +417,8 @@
 				"Like",
 				"Don't Like"
 			],
-			"answer": "Don't Like"
+			"answer": "Don't Like",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Main",
@@ -385,7 +427,8 @@
 				"You",
 				"I"
 			],
-			"answer": "I"
+			"answer": "I",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Aap",
@@ -394,7 +437,8 @@
 				"You",
 				"I"
 			],
-			"answer": "You"
+			"answer": "You",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Tum",
@@ -403,7 +447,8 @@
 				"You",
 				"I"
 			],
-			"answer": "You"
+			"answer": "You",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Hum",
@@ -412,7 +457,8 @@
 				"We",
 				"They"
 			],
-			"answer": "We"
+			"answer": "We",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Vo",
@@ -421,7 +467,8 @@
 				"He",
 				"Me"
 			],
-			"answer": "He"
+			"answer": "He",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Vo",
@@ -430,7 +477,8 @@
 				"Me",
 				"She"
 			],
-			"answer": "She"
+			"answer": "She",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Mera",
@@ -439,7 +487,8 @@
 				"My",
 				"Your"
 			],
-			"answer": "My"
+			"answer": "My",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Aapka",
@@ -448,7 +497,8 @@
 				"My",
 				"Your"
 			],
-			"answer": "Your"
+			"answer": "Your",
+			"include": "sometimes"
 		},
 		{
 			"question_text": "Ghar",
@@ -457,7 +507,8 @@
 				"Home",
 				"School"
 			],
-			"answer": "Home"
+			"answer": "Home",
+			"include": "always"
 		},
 		{
 			"question_text": "Bhai",
@@ -466,7 +517,8 @@
 				"Brother",
 				"Sister"
 			],
-			"answer": "Brother"
+			"answer": "Brother",
+			"include": "always"
 		},
 		{
 			"question_text": "Bahan",
@@ -475,7 +527,8 @@
 				"Brother",
 				"Sister"
 			],
-			"answer": "Sister"
+			"answer": "Sister",
+			"include": "always"
 		},
 		{
 			"question_text": "Dost",
@@ -484,7 +537,8 @@
 				"Friend",
 				"Sister"
 			],
-			"answer": "Friend"
+			"answer": "Friend",
+			"include": "always"
 		},
 		{
 			"question_text": "Aap kaise ho?",
@@ -493,7 +547,8 @@
 				"How are you?",
 				"Who am I?"
 			],
-			"answer": "How are you?"
+			"answer": "How are you?",
+			"include": "always"
 		},
 		{
 			"question_text": "Main theek hoon",
@@ -502,7 +557,8 @@
 				"I am fine",
 				"You are sad"
 			],
-			"answer": "I am fine"
+			"answer": "I am fine",
+			"include": "always"
 		},
 		{
 			"question_text": "Main game khel rahi hoon",
@@ -511,7 +567,8 @@
 				"I am playing a game",
 				"I am eating ice-cream"
 			],
-			"answer": "I am playing a game"
+			"answer": "I am playing a game",
+			"include": "always"
 		},
 		{
 			"question_text": "Main ice-cream kha rahi hoon",
@@ -520,7 +577,8 @@
 				"I am playing a game",
 				"I am eating ice-cream"
 			],
-			"answer": "I am eating ice-cream"
+			"answer": "I am eating ice-cream",
+			"include": "always"
 		},
 		{
 			"question_text": "Main dekh rahi hoon",
@@ -529,7 +587,8 @@
 				"I am watching",
 				"I am reading"
 			],
-			"answer": "I am watching"
+			"answer": "I am watching",
+			"include": "always"
 		},
 		{
 			"question_text": "Main pad rahi hoon",
@@ -538,7 +597,8 @@
 				"I am watching",
 				"I am reading"
 			],
-			"answer": "I am reading"
+			"answer": "I am reading",
+			"include": "always"
 		}
 	]
 }

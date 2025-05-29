@@ -44,8 +44,8 @@ extension SpeechMultiChoiceQuestionsData {
 extension SpeechMultiChoiceQuestionsData {
   static func sampleQuestions() -> [SpeechMultiChoiceQuestion] {
     return [
-      SpeechMultiChoiceQuestion(questionText: "ladaka", questionSpeech: "लड़का", answerChoices: ["Boy","Girl"], answer: "Boy"),
-      SpeechMultiChoiceQuestion(questionText: "ladakee", questionSpeech: "लड़की", answerChoices: ["Boy","Girl"], answer: "Girl")
+      SpeechMultiChoiceQuestion(questionText: "ladaka", questionSpeech: "लड़का", answerChoices: ["Boy","Girl"], answer: "Boy", include: .sometimes),
+      SpeechMultiChoiceQuestion(questionText: "ladakee", questionSpeech: "लड़की", answerChoices: ["Boy","Girl"], answer: "Girl", include: .always)
     ]
   }
 }
